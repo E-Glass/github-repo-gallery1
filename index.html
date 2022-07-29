@@ -2,10 +2,15 @@
 <html lang="en">
 
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>GitHub Repo Gallery</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@500&display=swap"
             rel="stylesheet" />
@@ -19,6 +24,7 @@
 
     <body>
         <main class="container">
+            <h1>GitHub Repo Gallery</h1>
             <div class="badge">
                 <div class="circle"></div>
             </div>
@@ -28,14 +34,17 @@
             </section>
 
             <section class="repos">
-                <input type="text" class="filter-repos hide" placeholder="Search by name" />
+                <input type="text" class="filter-repos hide" placeholder="Narrow your search">
+                <input type="text" class="filter-repos hide" placeholder="Narrow your search" />
                 <ul class="repo-list"></ul>
+            </section>
+            <section class="repo-data hide">
             </section>
             <section class="repo-data hide"></section>
             <div class="button-container">
-                <button class="view-repos hide">Back to Repo Gallery</button>
+                <button class="back hide">View Repos</button>
+                <button class="view-repos hide">Back to View Repos</button>
             </div>
         </main>
     </body>
-
 </html>
